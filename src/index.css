@@ -1,0 +1,9 @@
+.product-card{
+  position: fixed;
+  top: 20rem;
+  margin: 1rem;
+}
+
+.product-image{
+  height: 200px;
+}

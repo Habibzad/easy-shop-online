@@ -12,14 +12,16 @@ function Home() {
     image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
   });
   return (
-    <Card style={{ width: "20rem" }}>
-      <Card.Img variant="top" src={product.image} />
-      <Card.Body>
-        <Card.Title>{product.title}</Card.Title>
-        <Card.Text>{product.description}</Card.Text>
-        <Button variant="primary">Add to the card</Button>
-      </Card.Body>
-    </Card>
+    <div className="container">
+      <Card className="product-card" style={{ width: "20rem" }}>
+        <Card.Img className="product-image" variant="top" src={product.image} />
+        <Card.Body>
+          <Card.Title>{product.title}</Card.Title>
+          <Card.Text>{product.description}</Card.Text>
+          <Button variant="warning">Add to the card</Button>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
 
